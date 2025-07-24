@@ -1,0 +1,10 @@
+﻿CREATE PROCEDURE ObtenerMarca
+    @Id UNIQUEIDENTIFIER
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT Id, Nombre
+    FROM Marcas
+    WHERE Id = @Id;
+END
